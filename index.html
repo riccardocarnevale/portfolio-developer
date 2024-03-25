@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/mediaqueries.css" />
+    <title>Riccardo Carnevale</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Riccardo Carnevale</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Chi Sono</a></li>
+          <li><a href="#experience">Esperienze</a></li>
+          <li><a href="#projects">Progetti</a></li>
+          <li><a href="#contacts">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Riccardo Carnevale</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Chi Sono</a></li>
+            <li>
+              <a href="#experience" onclick="toggleMenu()">Esperienze</a>
+            </li>
+            <li><a href="#projects" onclick="toggleMenu()">Progetti</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contatti</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="img/riccardo-carnevale.png"
+          alt="Riccardo Carnevale Foto Profilo"
+          class="circular--landscape"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Ciao, sono</p>
+        <h1 class="title animate-character">Riccardo Carnevale</h1>
+        <p class="section__text__p2">
+          💡 Java Developer | Full-Stack Developer
+        </p>
+        <br />
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('doc/cv_carnevaleRiccardo.pdf')">
+            Il mio CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contattami
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="img/linkedin.png"
+            alt="Profilo Linkedin Riccardo Carnevale"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/riccardo-carnevale-795a192b5/'"
+          />
+          <img
+            src="img/github.png"
+            alt="Profilo GitHub Riccardo Carnevale"
+            class="icon"
+            onclick="location.href='https://www.github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text_p1" id="dipiu m2">Di piu su di me</p>
+      <h1 class="title">Chi Sono</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="img/mia.png" alt="Foto Profilo" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="img/utente.png" alt="Icona Esperienze" class="icon" />
+              <h3>Esperienze</h3>
+              <p>Attualmente non ho ancora avuto Esperienze Professionali in questo ambito. <br><b> Il mio sogno è riempire questo campo al più presto!</b></p>
+            </div>
+            <div class="details-container">
+              <img src="img/educazione.png" alt="Icona Esperienze" class="icon" />
+              <h3>Formazione</h3>
+              <p>
+                - Informatica per le Aziende Digitali (<b>Università</b>)<br />- Corso Java Developer (<b>durata 500
+                ore</b>)<br />- Informatica e Telecomunicazioni (<b>Istituto Tecnico</b>)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Sono un ragazzo di 22 anni, profondamente appassionato del mondo della programmazione. Ho frequentato un istituto tecnico con specializzazione in 'Informatica e Telecomunicazioni', per poi intraprendere un percorso universitario nella facoltà di 'Informatica per le Aziende Digitali' presso l'Università Telematica UniPegaso. Sono una persona proattiva, con una mentalità orientata al raggiungimento dei risultati e alla crescita personale. Sono in grado di risolvere e superare efficacemente i problemi che incontro nella mia quotidianità. Inoltre, amo lavorare in team e sviluppare rapporti umani con i miei colleghi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/frecce.png"
+        alt="Icona Frecce"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text_p1">Esplora le mie</p>
+      <h1 class="title">Competenze</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">BackEnd Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>Java SE / EE</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Base</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Base</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>SpringBoot</h3>
+                  <p>Base</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>Hibernate</h3>
+                  <p>Base</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">FrontEnd Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img src="img/success.png" alt="Icona Esperienze" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Base</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/frecce.png"
+        alt="Icona Frecce"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text_p1">Scopri i miei</p>
+      <h1 class="title">Progetti</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="img/prog-portfolio.png" alt="Copertina Progetto Portfolio" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="img/wip.png" alt="Foto Progetto 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Scacchi In Java</h2>
+            <div class="button-container">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="img/wip.png" alt="Foto Progetto 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Online Banking</h2>
+            <div class="button-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="img/frecce.png"
+        alt="Icona Frecce"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text_p1">I miei</p>
+      <h1 class="title">Contatti</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="img/email.png" alt="Icona Email" class="icon contact-icon" />
+          <p>
+            <a href="mailto:rcarnevaledev@gmail.com">rcarnevaledev@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="img/linkedin.png"
+            alt="Icona Linkedin"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/riccardo-carnevale-795a192b5/"
+              >Riccardo Carnevale</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Chi Sono</a></li>
+            <li><a href="#experience">Esperienze</a></li>
+            <li><a href="#projects">Progetti</a></li>
+            <li><a href="#contacts">Contatti</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169 2024 Riccardo Carnevale. <br> Tutti i diritti riservati.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
